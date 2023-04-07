@@ -5,7 +5,8 @@
         <small class="text-center"><?php the_category(); ?></small>
         <p><?php the_tags();?></p>
         <small><?php the_date(); ?></small>
-        <div>
+        <p><?php the_category();?></p>
+        <div class="w-50 h-50">
             <img src="<?php the_post_thumbnail_url(); ?>" class="d-flex justified-content-center" alt="">
         </div>
         <p><?php the_content(); ?></p>

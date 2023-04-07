@@ -2,7 +2,7 @@
 	
 	<div class="latest-news mt-150 mb-150">
 		<div class="container">
-			<h1 class="text-bold">Latest Items</h1>
+			<h1 class="text-bold">Giveaways</h1>
 			<hr class="hr hr-dark mb-5">
 			<div class="row">
 				<?php if(have_posts()):
@@ -14,7 +14,8 @@
 								<div class="news-text-box">
 									<h3><a href="#"><?php the_title(); ?></a></h3>
 									<span><?php the_category(); ?></span>
-									<span class="date"><i class="fas fa-calendar"></i><?php the_date(); ?></span>
+									<span><?php the_tags(); ?></span>
+									<span class="date"><?php echo get_the_date('F j, Y') ; ?></span>
 									<p class="excerpt"><?php the_excerpt(); ?></p>
 									<a href="<?php the_permalink(); ?>" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 								</div>

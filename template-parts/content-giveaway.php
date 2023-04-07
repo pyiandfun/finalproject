@@ -6,7 +6,8 @@
             <figure><img src="<?php 
                 the_post_thumbnail_url('thumbnail'); 
                 ?>" alt="#"/></figure>
-            <p>
+            <p><?php the_category();?></p>
+            <p><?php the_tags();?></p>
             <?php
                 the_excerpt();
             ?>

@@ -1,9 +1,8 @@
 <?php get_header();?>
 
 <div class="notfound-wrapper">
-    <div class="notfound-container">
-        <p>404</p>
-        <p>not found</p>
+    <div>
+        <h5 class="text-center m-5">404 page not found.</h5>
     </div>
 </div>
 

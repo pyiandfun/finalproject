@@ -3,19 +3,12 @@
         wp_enqueue_style('my_style',get_template_directory_uri().'/style.css',array(),'1.0','all');
         wp_enqueue_style('my_bootstrapMin',get_template_directory_uri().'/assets/css/all.min.css',array(),'1.0','all');
         wp_enqueue_style('followendrew_bootstrap_cdn','https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',array(),'4.4.1','all');
-        wp_enqueue_style('my_animate',get_template_directory_uri().'/assets/css/animate.css',array(),'1.0','all');
-        wp_enqueue_style('my_magnific-popup',get_template_directory_uri().'/assets/css/magnific-popup.css',array(),'1.0','all');
-        wp_enqueue_style('my_meanmenu',get_template_directory_uri().'/assets/css/meanmenu.min.css',array(),'1.0','all');
-        wp_enqueue_style('my_responsive',get_template_directory_uri().'/assets/css/responsive.css',array(),'1.0','all');
       }
 
       add_action('wp_enqueue_scripts','my_Register_styles');
 
       function my_Register_scripts() {
         wp_enqueue_script('my_script',get_template_directory_uri().'/assets/js/bootstrap.min.js',true);
-        wp_enqueue_script('my_script',get_template_directory_uri().'/assets/js/jquery-3.4.1.min.js',true);
-        wp_enqueue_script('my_script',get_template_directory_uri().'/assets/js/parallax.min.js',true);     
-        wp_enqueue_script('my_script',get_template_directory_uri().'/assets/js/script.js',true);       
       }
       add_action('wp_enqueue_scripts','my_Register_scripts');
 
@@ -116,7 +109,7 @@
       register_post_type( 'giveaways',
       array(
           'labels' =>array(
-            'name' => __('giveaways'),
+            'name' => __('Giveaways'),
             'singular_name' => __('giveaway')
         ),
         'public' => true,
